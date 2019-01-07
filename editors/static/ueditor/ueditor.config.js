@@ -70,15 +70,15 @@
     //, customDomain:false
 
     // 常用配置项目
-    //, isShow : true    //默认显示编辑器
+    // isShow: false, // 默认显示编辑器
 
     //, textarea:'editorValue' // 提交表单时，服务器获取编辑器提交内容的所用的参数，多实例时可以给容器name属性，会将name给定的值最为每个实例的键值，不用每次实例化的时候都设置这个值
 
     //, initialContent:'欢迎使用ueditor!'    //初始化编辑器的内容,也可以通过textarea/script给值，看官网例子
 
-    //, autoClearinitialContent:true //是否自动清除编辑器初始内容，注意：如果focus属性设置为true,这个也为真，那么编辑器一上来就会触发导致初始化的内容看不到了
+    autoClearinitialContent: true, // 是否自动清除编辑器初始内容，注意：如果focus属性设置为true,这个也为真，那么编辑器一上来就会触发导致初始化的内容看不到了
 
-    //, focus:false //初始化时，是否让编辑器获得焦点true或false
+    focus: false, // 初始化时，是否让编辑器获得焦点true或false
 
     // 如果自定义，最好给p标签如下的行高，要不输入中文时，会有跳动感
     //, initialStyle:'p{line-height:1em}'//编辑器层级的基数,可以用来改变字体等
@@ -89,8 +89,8 @@
     // 首行缩进距离,默认是2em
     //, indentValue:'2em'
 
-    //, initialFrameWidth:1000  //初始化编辑器宽度,默认1000
-    //, initialFrameHeight:320  //初始化编辑器高度,默认320
+    initialFrameWidth: 1000, // 初始化编辑器宽度,默认1000
+    initialFrameHeight: 320, // 初始化编辑器高度,默认320
 
     //, readonly : false //编辑器初始化结束后,编辑区域是否是只读的，默认是false
 
@@ -140,7 +140,7 @@
     //    }
     // }()
 
-    //, allHtmlEnabled:false //提交到后台的数据是否包含整个html字符串
+    allHtmlEnabled: true, // 提交到后台的数据是否包含整个html字符串
 
     // insertorderedlist
     // 有序列表的下拉配置,值留空时支持多语言自动识别，若配置值，则以此值为准
@@ -247,7 +247,7 @@
 
     // elementPathEnabled
     // 是否启用元素路径，默认是显示
-    //, elementPathEnabled : true
+    elementPathEnabled: false,
 
     // wordCount
     //, wordCount:true          //是否开启字数统计

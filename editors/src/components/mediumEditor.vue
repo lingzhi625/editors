@@ -6,11 +6,6 @@
 
 <script>
 import MediumEditor from 'medium-editor'
-// import '../node-modules/medium-editor-insert-plugin/dist/js/medium-editor-insert-plugin.min.js'
-// import MediumEditor from 'medium-editor'
-// import * as $ from 'jquery'
-// import '../../../node_modules/blueimp-file-upload/js/jquery.fileupload.js'
-
 export default {
   name: 'mediumEditor',
   data () {
@@ -32,12 +27,6 @@ export default {
         buttons: ['bold', 'italic', 'underline', 'anchor', 'h2', 'h3', 'quote']
       }
     })
-    // $(() => {
-    //   $('.editable').mediumInsert({
-    //     editor: editor
-    //   })
-    // })
-    // console.log(editor)
     this.editor = editor
   },
   created () {
